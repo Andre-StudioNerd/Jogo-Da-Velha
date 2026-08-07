@@ -4,20 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags adicionadas -->
+    <meta name="description" content="Desafie seus amigos no clássico Jogo da Velha diretamente no navegador." />
+    <meta name="author" content="André" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:title" content="Jogo da Velha" />
+    <meta property="og:description" content="Jogue o clássico Jogo da Velha online!" />
+    <meta property="og:image" content="img/velha.png" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="img/icon.png" />
     <title>Jogo da Velha</title>
   </head>
   <body>
-    <div class="board_index" data-board>
+    <!-- Pontos de Referência (Landmarks) -->
+    <header>
       <h1 class="titulo">Jogo da Velha</h1>
-      <div>
-        <img src="img/velha.png" alt="Ícone de Jogo" class="imagem-jogo" />
-      </div>
-      <div>
+    </header>
+
+    <main class="board_index" data-board>
+      <figure>
+        <img src="img/velha.png" alt="Ilustração do Jogo da Velha" class="imagem-jogo" />
+      </figure>
+
+      <nav aria-label="Navegação principal">
         <button onclick="window.location.href='jogo.html'">JOGAR</button>
-      </div>
-    </div>
+      </nav>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jogo da Velha. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="Js/scripts.js"></script>
   </body>

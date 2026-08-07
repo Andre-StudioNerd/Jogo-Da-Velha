@@ -1,35 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags adicionadas -->
+    <meta
+      name="description"
+      content="Partida em andamento do Jogo da Velha. Faça sua jogada e vença!"
+    />
+    <meta name="author" content="André" />
+    <meta name="robots" content="noindex, follow" />
+
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:title" content="Jogo da Velha - Partida" />
+    <meta
+      property="og:description"
+      content="Desafie seu oponente no Jogo da Velha!"
+    />
+    <meta property="og:image" content="img/velha.png" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="img/icon.png" />
-    <title>Jogo da Velha</title>
+    <title>Jogo da Velha - Partida</title>
   </head>
   <body>
-    <div></div>
-    <div class="board" data-board>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-      <div class="cell" data-cell></div>
-    </div>
+    <!-- Landmarks HTML5 -->
+    <header>
+      <h1 class="sr-only">Tabuleiro do Jogo da Velha</h1>
+    </header>
 
-    <div class="winning-message" data-winning-message>
-      <p class="winning-message-text" data-winning-message-text>X Venceu!</p>
-      <button class="winning-message-button" data-restart-button>
-        Reiniciar!
-      </button>
-    </div>
+    <main>
+      <!-- Área principal do tabuleiro -->
+      <section aria-label="Tabuleiro de jogo">
+        <div class="board" data-board>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+          <div
+            class="cell"
+            data-cell
+            role="button"
+            tabindex="0"
+            aria-label="Célula vazia"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Mensagem de resultado -->
+      <section class="winning-message" data-winning-message aria-live="polite">
+        <p class="winning-message-text" data-winning-message-text>X Venceu!</p>
+        <button class="winning-message-button" data-restart-button>
+          Reiniciar!
+        </button>
+      </section>
+    </main>
+
     <footer>
-      <button class="centralizar-botao" onclick="history.back()">SAIR</button>
+      <nav aria-label="Ações da partida">
+        <button class="centralizar-botao" onclick="history.back()">SAIR</button>
+      </nav>
     </footer>
 
     <script src="Js/scripts.js"></script>
