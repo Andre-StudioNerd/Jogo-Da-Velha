@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta tags adicionadas -->
+    <!-- Meta tags -->
     <meta
       name="description"
       content="Partida em andamento do Jogo da Velha. Faça sua jogada e vença!"
@@ -24,97 +24,33 @@
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="img/icon.png" />
-    <title>Jogo da Velha - Partida</title>
+    <title>Jogo da Velha</title>
   </head>
   <body>
-    <!-- Landmarks HTML5 -->
-    <header>
-      <h1 class="sr-only">Tabuleiro do Jogo da Velha</h1>
-    </header>
+    <main class="espace_game">
+      <div></div>
+      <div class="board" data-board>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
 
-    <main>
-      <!-- Área principal do tabuleiro -->
-      <section aria-label="Tabuleiro de jogo">
-        <div class="board" data-board>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-          <div
-            class="cell"
-            data-cell
-            role="button"
-            tabindex="0"
-            aria-label="Célula vazia"
-          ></div>
-        </div>
-      </section>
-
-      <!-- Mensagem de resultado -->
-      <section class="winning-message" data-winning-message aria-live="polite">
+      <div class="winning-message" data-winning-message>
         <p class="winning-message-text" data-winning-message-text>X Venceu!</p>
         <button class="winning-message-button" data-restart-button>
           Reiniciar!
         </button>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <nav aria-label="Ações da partida">
-        <button class="centralizar-botao" onclick="history.back()">SAIR</button>
-      </nav>
+      <button class="centralizar-botao" onclick="history.back()">SAIR</button>
     </footer>
 
     <script src="Js/scripts.js"></script>
